@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Akidu Dehan — Frontend Developer. Building beautiful, interactive web experiences." />
+  <title>Services | Akidu Dehan</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56'><rect width='56' height='56' rx='14' fill='%230a7a82'/><text x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='700' font-size='22' fill='white'>AD</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script defer src="./assets/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/programerPic.jpeg" alt="Akidu Dehan logo" width="42" height="42" class="brand-logo" />
+        <span>Akidu<strong>.</strong></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+        <a href="contact.html" class="btn btn-sm btn-primary hire-btn">Hire Me</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ══ SERVICES ══ -->
+    <section id="portfolio">
+      <div class="section page-hero">
+        <div class="container narrow">
+          <p class="eyebrow reveal">Services</p>
+          <h1 class="reveal">What I Offer</h1>
+          <p class="reveal">A mix of personal projects, client work, and open-source experiments all built with care.</p>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0">
+        <div class="container">
+          <div class="filter-bar reveal" role="tablist" aria-label="Portfolio filters">
+            <button class="filter-btn active" data-filter="all"  role="tab" aria-selected="true">All</button>
+            <button class="filter-btn" data-filter="ui"          role="tab" aria-selected="false">UI Design</button>
+            <button class="filter-btn" data-filter="react"       role="tab" aria-selected="false">React</button>
+            <button class="filter-btn" data-filter="animation"   role="tab" aria-selected="false">Animation</button>
+            <button class="filter-btn" data-filter="fullstack"   role="tab" aria-selected="false">Full-stack</button>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="project-card large reveal" data-category="react">
+              <div class="project-img-wrap">
+                <img src="assets\portfolioAssets\DesignSystemDashboard.jpg" alt="Design System Dashboard" width="800" height="400" loading="lazy" class="project-img" />
+                <div class="project-overlay"><span class="chip">React</span><button class="like-btn" aria-label="Like project"></button></div>
+              </div>
+              <div class="project-body">
+                <h2>Design System Dashboard</h2>
+                <p>A component-driven dashboard built with React and TypeScript, featuring real-time data, dark mode, and a cohesive design token system.</p>
+                <div class="project-meta"><span>React</span><span>TypeScript</span><span>CSS Variables</span></div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="animation">
+              <div class="project-img-wrap">
+                <img src="assets\portfolioAssets\Storytelling.png" alt="Scroll Storytelling" width="600" height="320" loading="lazy" class="project-img" />
+                <div class="project-overlay"><span class="chip">Animation</span><button class="like-btn" aria-label="Like project"></button></div>
+              </div>
+              <div class="project-body">
+                <h2>Scroll Storytelling</h2>
+                <p>An interactive scroll-driven narrative using GSAP ScrollTrigger and SVG animations to tell a brand story.</p>
+                <div class="project-meta"><span>GSAP</span><span>SVG</span><span>HTML/CSS</span></div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="ui">
+              <div class="project-img-wrap">
+                <img src="assets\portfolioAssets\PersonalFinance.jpeg" alt="Finance App UI" width="600" height="320" loading="lazy" class="project-img" />
+                <div class="project-overlay"><span class="chip">UI Design</span><button class="like-btn" aria-label="Like project"></button></div>
+              </div>
+              <div class="project-body">
+                <h2>Personal Finance App UI</h2>
+                <p>A mobile-first finance tracker UI designed in Figma and built with pure CSS Grid featuring micro-animations on every interaction.</p>
+                <div class="project-meta"><span>Figma</span><span>CSS Grid</span><span>JavaScript</span></div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="fullstack">
+              <div class="project-img-wrap">
+                <img src="assets\portfolioAssets\PortfolioCMS.jpeg" alt="Portfolio CMS Platform" width="600" height="320" loading="lazy" class="project-img" />
+                <div class="project-overlay"><span class="chip">Full-stack</span><button class="like-btn" aria-label="Like project"></button></div>
+              </div>
+              <div class="project-body">
+                <h2>Portfolio CMS Platform</h2>
+                <p>A Next.js app with a headless CMS backend, optimised images, and sub-second page loads across all routes.</p>
+                <div class="project-meta"><span>Next.js</span><span>Sanity CMS</span><span>Tailwind</span></div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="animation">
+              <div class="project-img-wrap">
+                <img src="assets\portfolioAssets\ArtCollection.jpeg" alt="CSS Art Collection" width="600" height="320" loading="lazy" class="project-img" />
+                <div class="project-overlay"><span class="chip">Animation</span><button class="like-btn" aria-label="Like project"></button></div>
+              </div>
+              <div class="project-body">
+                <h2>CSS Art Collection</h2>
+                <p>A gallery of pure-CSS illustrations and generative animations exploring what is possible without a canvas element.</p>
+                <div class="project-meta"><span>CSS</span><span>Keyframes</span><span>clip-path</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/programerPic.jpeg" alt="Akidu Dehan logo" width="32" height="32" />
+        <span>Akidu Dehan</span>
+      </a>
+      <p class="footer-copy">© 2026 Akidu Dehan · Frontend Developer</p>
+      <div class="footer-socials">
+        <a href="contact.html" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="contact.html" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="contact.html" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Akidu Dehan — Frontend Developer. Building beautiful, interactive web experiences." />
+  <title>Akidu Dehan | Frontend Developer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56'><rect width='56' height='56' rx='14' fill='%230a7a82'/><text x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='700' font-size='22' fill='white'>AD</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script defer src="./assets/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/programerPic.jpeg" alt="Akidu Dehan logo" width="42" height="42" class="brand-logo" />
+        <span>Akidu<strong>.</strong></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+        <a href="contact.html" class="btn btn-sm btn-primary hire-btn">Hire Me</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ══ HOME ══ -->
+    <section id="home">
+
+      <!-- Hero -->
+      <div class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="availability-badge reveal">
+              <span class="pulse-dot"></span>Open to work &middot; Available now
+            </div>
+            <h1 class="reveal">
+              I craft<br>
+              <span class="accent-word">interfaces</span><br>
+              that feel alive.
+            </h1>
+            <p class="hero-text reveal">
+              Hi, I&#39;m <strong>Akidu Dehan</strong> a 24 year old Frontend Developer who turns complex ideas into smooth, pixel-perfect web experiences. I live for clean code, sharp design, and meaningful interactions.
+            </p>
+            <div class="hero-actions reveal">
+              <a href="portfolio.html" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                View My Work
+              </a>
+              <a href="contact.html" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Say Hello
+              </a>
+            </div>
+            <div class="hero-stats reveal">
+              <article><strong data-count="18">0</strong><span>Projects shipped</span></article>
+              <article><strong data-count="3">0</strong><span>Years experience</span></article>
+              <article><strong data-count="100">0</strong><span>Passion for UI</span></article>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="dev-card floating">
+              <div class="dev-card-header">
+                <div class="traffic-lights">
+                  <span style="background:#ff5f56;width:12px;height:12px;border-radius:50%;display:inline-block;flex-shrink:0"></span>
+                  <span style="background:#febc2e;width:12px;height:12px;border-radius:50%;display:inline-block;flex-shrink:0"></span>
+                  <span style="background:#27c840;width:12px;height:12px;border-radius:50%;display:inline-block;flex-shrink:0"></span>
+                </div>
+                <span class="dev-file">portfolio.js</span>
+              </div>
+              <pre class="code-block"><code><span class="cl-keyword">const</span> <span class="cl-var">developer</span> = {
+  <span class="cl-prop">name</span>: <span class="cl-string">"Akidu Dehan"</span>,
+  <span class="cl-prop">age</span>: <span class="cl-number">24</span>,
+  <span class="cl-prop">role</span>: <span class="cl-string">"Frontend Dev"</span>,
+  <span class="cl-prop">skills</span>: [
+    <span class="cl-string">"HTML"</span>, <span class="cl-string">"CSS"</span>,
+    <span class="cl-string">"JavaScript"</span>, <span class="cl-string">"React"</span>
+  ],
+  <span class="cl-prop">available</span>: <span class="cl-boolean">true</span>,
+};</code></pre>
+            </div>
+            <div class="skill-pill pill-a floating-delayed">React ⚛</div>
+            <div class="skill-pill pill-b floating-slow">Figma ✦</div>
+            <div class="skill-pill pill-c floating-slow">TypeScript</div>
+            <div class="skill-pill pill-d floating-delayed">GSAP 🎞</div>
+        </div>
+      </div>
+
+      <!-- Marquee -->
+      <div class="marquee-section" aria-hidden="true">
+        <div class="marquee-track">
+          <span>HTML &amp; CSS</span><span class="sep">✦</span><span>JavaScript</span><span class="sep">✦</span><span>React</span><span class="sep">✦</span><span>TypeScript</span><span class="sep">✦</span><span>Figma</span><span class="sep">✦</span><span>Tailwind CSS</span><span class="sep">✦</span><span>GSAP</span><span class="sep">✦</span><span>Next.js</span><span class="sep">✦</span><span>Git</span><span class="sep">✦</span><span>Accessibility</span><span class="sep">✦</span><span>Performance</span><span class="sep">✦</span>
+          <span>HTML &amp; CSS</span><span class="sep">✦</span><span>JavaScript</span><span class="sep">✦</span><span>React</span><span class="sep">✦</span><span>TypeScript</span><span class="sep">✦</span><span>Figma</span><span class="sep">✦</span><span>Tailwind CSS</span><span class="sep">✦</span><span>GSAP</span><span class="sep">✦</span><span>Next.js</span><span class="sep">✦</span><span>Git</span><span class="sep">✦</span><span>Accessibility</span><span class="sep">✦</span><span>Performance</span><span class="sep">✦</span>
+        </div>
+      </div>
+
+      <!-- Services preview -->
+      <div class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">What I do</p>
+            <h2>Frontend craft, from pixels to performance.</h2>
+          </div>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <img src="assets/homeAssests/UIDevelopment.jpg" alt="UI development" width="400" height="200" loading="lazy" class="service-img" />
+              <div class="service-body">
+                <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                <h3>UI Development</h3>
+                <p>Clean, semantic HTML and modern CSS that looks great and works on every screen.</p>
+              </div>
+            </article>
+            <article class="service-card reveal">
+              <img src="assets/homeAssests/InteractiveExperiences.jpg" alt="Interactive experiences" width="400" height="200" loading="lazy" class="service-img" />
+              <div class="service-body">
+                <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                <h3>Interactive Experiences</h3>
+                <p>Smooth animations, micro-interactions, and gesture-driven interfaces.</p>
+              </div>
+            </article>
+            <article class="service-card reveal">
+              <img src="assets/homeAssests/ResponsiveDesign.jpg" alt="Responsive design" width="400" height="200" loading="lazy" class="service-img" />
+              <div class="service-body">
+                <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+                <h3>Responsive Design</h3>
+                <p>Mobile-first layouts that flow naturally from small screens to ultra-wide displays.</p>
+              </div>
+            </article>
+            <article class="service-card reveal">
+              <img src="assets/homeAssests/PerformanceOptimization.jpg" alt="Performance optimization" width="400" height="200" loading="lazy" class="service-img" />
+              <div class="service-body">
+                <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                <h3>Performance Optimization</h3>
+                <p>Fast load times, optimized assets, and Core Web Vitals that keep users happy.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/programerPic.jpeg" alt="Akidu Dehan logo" width="32" height="32" />
+        <span>Akidu Dehan</span>
+      </a>
+      <p class="footer-copy">© 2026 Akidu Dehan · Frontend Developer</p>
+      <div class="footer-socials">
+        <a href="contact.html" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="contact.html" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="contact.html" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

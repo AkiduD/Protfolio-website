@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Akidu Dehan — Frontend Developer. Building beautiful, interactive web experiences." />
+  <title>Blog | Akidu Dehan</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56'><rect width='56' height='56' rx='14' fill='%230a7a82'/><text x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-weight='700' font-size='22' fill='white'>AD</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script defer src="./assets/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/programerPic.jpeg" alt="Akidu Dehan logo" width="42" height="42" class="brand-logo" />
+        <span>Akidu<strong>.</strong></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+        <a href="contact.html" class="btn btn-sm btn-primary hire-btn">Hire Me</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ══ BLOG ══ -->
+    <section id="blog">
+      <div class="section page-hero">
+        <div class="container narrow">
+          <p class="eyebrow reveal">Blog</p>
+          <h1 class="reveal">Writing about frontend, design, and the craft.</h1>
+          <p class="reveal">I share what I learn from CSS tricks to architecture decisions to the philosophy behind good UI.</p>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0">
+        <div class="container blog-grid">
+          <article class="blog-feature reveal">
+            <img src="assets\blogAssets\blog1.jpg" alt="Design and development article cover" width="900" height="380" loading="lazy" class="blog-cover" />
+            <div class="blog-feature-body">
+              <span class="chip">Featured</span>
+              <h2>Why every frontend developer should understand design</h2>
+              <p class="blog-date">April 2026 &middot; 7 min read</p>
+              <p>You don&#39;t need to be a designer to care about design. Understanding spacing rhythm, colour theory, and type hierarchy makes you a dramatically better developer because you start seeing what&#39;s wrong before it ships.</p>
+              <button class="text-btn read-more-btn" type="button">Continue reading</button>
+            </div>
+            <div class="blog-more">
+              <p>The best frontends come from developers who can look at a design and ask &ldquo;why?&rdquo; not just &ldquo;how?&rdquo;. When you understand the intent behind a layout decision, you can implement it more faithfully, push back with informed opinions, and invent better solutions when constraints change.</p>
+              <p>I recommend every frontend developer spend at least a month trying to design something from scratch. The struggle teaches you more than any tutorial.</p>
+            </div>
+          </article>
+
+          <aside class="blog-sidebar">
+            <article class="blog-card reveal">
+              <img src="assets\blogAssets\blog2.jpg" alt="CSS article cover" width="500" height="200" loading="lazy" class="blog-card-img" />
+              <div class="blog-card-body">
+                <p class="blog-meta">CSS &middot; 5 min read</p>
+                <h3>The modern CSS properties I use every day</h3>
+                <p>container queries, has(), oklch, and logical properties changed how I write stylesheets.</p>
+              </div>
+            </article>
+            <article class="blog-card reveal">
+              <img src="assets\blogAssets\blog3.jpg" alt="Animation article cover" width="500" height="200" loading="lazy" class="blog-card-img" />
+              <div class="blog-card-body">
+                <p class="blog-meta">JavaScript &middot; 6 min read</p>
+                <h3>Writing animation code that feels natural</h3>
+                <p>Good easing curves, staggered timings, and respecting user motion preferences.</p>
+              </div>
+            </article>
+            <article class="blog-card reveal">
+              <img src="assets\blogAssets\blog4.jpg" alt="React patterns article cover" width="500" height="200" loading="lazy" class="blog-card-img" />
+              <div class="blog-card-body">
+                <p class="blog-meta">React &middot; 4 min read</p>
+                <h3>Component composition patterns I keep coming back to</h3>
+                <p>Compound components, render props, and polymorphic elements still the most flexible patterns.</p>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/programerPic.jpeg" alt="Akidu Dehan logo" width="32" height="32" />
+        <span>Akidu Dehan</span>
+      </a>
+      <p class="footer-copy">© 2026 Akidu Dehan · Frontend Developer</p>
+      <div class="footer-socials">
+        <a href="contact.html" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="contact.html" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="contact.html" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
